@@ -1,0 +1,16 @@
+<div>
+  <form name="form" #form="ngForm" (ngSubmit)="onLoginSubmit()" novalidate >
+    <div>
+        <label>Email</label>
+        <input type="email" placeholder="Enter your name" [(ngModel)]="user.email" name="useremail" #useremail="ngModel" />
+    </div>
+    <div>
+      <label>Password</label>
+      <input type="password" placeholder="Enter your password" [(ngModel)]="user.password" name="userpassword" #userpassword="ngModel"/>
+    </div>
+    <div>
+      <button mat-button > <mat-icon>face</mat-icon>Sumbit</button>
+    </div>
+
+  </form>
+</div>
